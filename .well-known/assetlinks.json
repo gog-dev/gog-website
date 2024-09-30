@@ -1,0 +1,14 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.gangsofgreenpur",
+        "sha256_cert_fingerprints": [
+          "52:87:D7:59:F2:15:F9:A3:39:81:38:0B:90:7A:48:05:A9:AA:5E:2E:A2:55:C3:30:0A:66:9B:D1:E4:DD:C1:0F"
+        ]
+      }
+    }
+  ]
