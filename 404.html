@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=/" />
     <title>Redirecting...</title>
     <script type="text/javascript">
-        // Get the current path
+        // Extract the path from the current URL
         const path = window.location.pathname;
 
-        // Check if the path is requesting .well-known/assetlinks.json
-        if (path === '/.well-known/assetlinks.json') {
-            // Redirect to the assetlinks.json file in the repository
-            window.location.href = 'https://gangsofgreenpur.com/.well-known/assetlinks.json'
-            // If not, redirect to the main page
-            window.location.href = '/';
+        // Check if the path matches the desired pattern
+        const regex = /^\/p\/\w+$/;
+        if (regex.test(path)) {
+            // Redirect to the main page if the path matches the pattern
+            window.location.href = "https://gangsofgreenpur.com";
         }
     </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href="/">link</a>.</p>
+    <p>If you are not redirected automatically, follow this <a href="https://gangsofgreenpur.com">link</a>.</p>
 </body>
 </html>
